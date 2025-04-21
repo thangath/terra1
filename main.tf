@@ -18,9 +18,9 @@ region     = "ap-southeast-1"
 access_key = "${var.access_key}"
 secret_key = "${var.secret_key}"
 }
-resource "aws_security_group" "TEST2" {
-  name        = "TEST2"
-  description = "Security Group for TEST2"
+resource "aws_security_group" "TEST3" {
+  name        = "TEST3"
+  description = "Security Group for TEST3"
   vpc_id      = "vpc-065d9a9f4928d8314"
 
   ingress {
