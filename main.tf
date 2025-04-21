@@ -1,7 +1,7 @@
-variable "access_key" {
+variable "access_key1" {
   type = string
 }
-variable "secret_key" {
+variable "secret_key1" {
   type = string
 }
 
@@ -15,8 +15,8 @@ terraform {
 }
 provider "aws" {
 region     = "ap-southeast-1"
-access_key = var.access_key
-secret_key = var.secret_key
+access_key = var.access_key1
+secret_key = var.secret_key1
 }
 resource "aws_security_group" "TEST3" {
   name        = "TEST3"
